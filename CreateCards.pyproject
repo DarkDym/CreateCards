@@ -1,0 +1,19 @@
+{
+    "files": [
+        ".gitignore",
+        "AllCards.py",
+        "AllSets.py",
+        "__init__.py",
+        "all_cards.json",
+        "all_sets.json",
+        "createCards.py",
+        "createCards.ui",
+        "dashW.py",
+        "dashW.ui",
+        "dashWindow.py",
+        "form.ui",
+        "mainwindow.ui",
+        "showCards.py",
+        "showCards.ui"
+    ]
+}

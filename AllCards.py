@@ -16,6 +16,7 @@ from pokemontcgsdk.cardmarket import Cardmarket
 from pokemontcgsdk.weakness import Weakness
 from pokemontcgsdk import RestClient
 import json
+from credentials import credentials
 
 
 class Cards:
@@ -24,7 +25,8 @@ class Cards:
         print("CARDS INITIALIZED!")
 
     def download_all_cards_json(self):
-        RestClient.configure('398ea8f1-720c-418e-9f18-1e80f4ab5e17')
+        self.tcg_api_key = credentials()
+        RestClient.configure(self.tcg_api_key.key)
         print("VOU PEGAR AS CARTAS")
         cards = Card.all()
         all_cards = []

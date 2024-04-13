@@ -2,3 +2,4 @@ all_cards.json
 venv
 env
 __pycache__
+credentials.py

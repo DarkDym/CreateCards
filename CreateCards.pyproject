@@ -8,6 +8,7 @@
         "all_sets.json",
         "createCards.py",
         "createCards.ui",
+        "credentials.py",
         "dashW.py",
         "dashW.ui",
         "dashWindow.py",

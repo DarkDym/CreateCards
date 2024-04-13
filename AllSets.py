@@ -4,6 +4,7 @@ import json
 import os
 from AllCards import Cards
 import requests
+from credentials import credentials
 
 class Sets:
     def __init__(self, flag_cdir=False):
@@ -17,7 +18,8 @@ class Sets:
         print("SETS INITIALIZED!")
 
     def download_sets(self):
-        RestClient.configure('398ea8f1-720c-418e-9f18-1e80f4ab5e17')
+        self.tcg_api_key = credentials()
+        RestClient.configure(self.tcg_api_key.key)
 
         sets = Set.all()
         all_sets = []
